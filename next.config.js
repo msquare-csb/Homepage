@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const repo = "MSQ";
+const repo = "Homepage";
 const basePath = `/${repo}`;
 const distDir = process.env.NEXT_DIST_DIR || ".next";
 
