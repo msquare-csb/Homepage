@@ -36,12 +36,12 @@ jobs:
         run: npm run build
 
       - name: Disable Jekyll
-        run: echo > out/.nojekyll
+        run: touch .next-build/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: out
+          path: .next-build
 
       - name: Deploy to GitHub Pages
         id: deployment
