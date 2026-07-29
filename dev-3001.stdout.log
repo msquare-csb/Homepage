@@ -1,0 +1,80 @@
+   ▲ Next.js 15.5.9
+   - Local:        http://localhost:3001
+   - Network:      http://172.25.240.1:3001
+
+ ✓ Starting...
+ ✓ Ready in 1046ms
+ ○ Compiling /research ...
+ ✓ Compiled /pi in 1264ms (610 modules)
+ GET /research/ 200 in 1459ms
+ GET /pi/ 200 in 900ms
+ GET /research/ 200 in 18ms
+ ✓ Compiled /research/[slug] in 206ms (624 modules)
+ GET /research/ferroelectrics-dielectrics/ 200 in 712ms
+ GET /research/ferroelectrics-dielectrics/ 200 in 23ms
+ GET /research/ferroelectrics-dielectrics/ 200 in 228ms
+ ✓ Compiled /activities in 233ms (608 modules)
+ GET /activities/ 200 in 407ms
+ ✓ Compiled /news in 117ms (614 modules)
+ GET /news/ 200 in 243ms
+ ✓ Compiled /research/[slug] in 135ms (394 modules)
+ GET /research/ferroelectrics-dielectrics/ 200 in 332ms
+ GET /news/ 200 in 28ms
+ GET /activities/ 200 in 23ms
+ ✓ Compiled in 916ms (643 modules)
+ GET /activities/ 200 in 80ms
+ ✓ Compiled /_not-found in 152ms (634 modules)
+ GET /news/ 404 in 288ms
+ GET /news/ 200 in 148ms
+ ✓ Compiled / in 253ms (649 modules)
+ GET / 200 in 404ms
+ GET / 200 in 62ms
+ ✓ Compiled /pi in 93ms (408 modules)
+ GET /pi/ 200 in 142ms
+ GET /pi/ 200 in 24ms
+ ✓ Compiled /members/current in 209ms (662 modules)
+ GET /members/current/ 200 in 249ms
+ ✓ Compiled in 182ms (657 modules)
+ ✓ Compiled in 109ms (657 modules)
+ ✓ Compiled in 198ms (657 modules)
+ ✓ Compiled in 252ms (671 modules)
+ GET /members/current/ 200 in 157ms
+ ✓ Compiled in 261ms (671 modules)
+ ✓ Compiled in 211ms (671 modules)
+ ✓ Compiled in 253ms (671 modules)
+ ✓ Compiled in 180ms (657 modules)
+ ✓ Compiled in 121ms (657 modules)
+ ✓ Compiled in 150ms (657 modules)
+ ✓ Compiled in 313ms (657 modules)
+ ✓ Compiled in 382ms (660 modules)
+ ✓ Compiled in 430ms (674 modules)
+ ✓ Compiled in 160ms (657 modules)
+ ✓ Compiled in 195ms (671 modules)
+ ✓ Compiled in 95ms (412 modules)
+ ✓ Compiled in 177ms (671 modules)
+ ✓ Compiled in 92ms (412 modules)
+ ✓ Compiled in 182ms (671 modules)
+ ✓ Compiled in 203ms (671 modules)
+ ✓ Compiled in 156ms (657 modules)
+ ✓ Compiled in 112ms (657 modules)
+ ✓ Compiled in 119ms (657 modules)
+ ✓ Compiled in 113ms (657 modules)
+ ✓ Compiled in 140ms (657 modules)
+ ✓ Compiled in 288ms (657 modules)
+ ✓ Compiled in 303ms (657 modules)
+ ✓ Compiled in 529ms (671 modules)
+ ✓ Compiled in 269ms (657 modules)
+ ✓ Compiled in 129ms (657 modules)
+ ✓ Compiled in 173ms (657 modules)
+ ✓ Compiled in 205ms (657 modules)
+ ✓ Compiled in 173ms (657 modules)
+ ✓ Compiled in 331ms (657 modules)
+ ✓ Compiled in 354ms (657 modules)
+ ✓ Compiled in 366ms (671 modules)
+ ✓ Compiled in 446ms (671 modules)
+ ✓ Compiled in 227ms (657 modules)
+ ✓ Compiled in 304ms (657 modules)
+ ✓ Compiled in 298ms (671 modules)
+ ✓ Compiled in 280ms (657 modules)
+ ✓ Compiled in 198ms (671 modules)
+ ✓ Compiled in 205ms (657 modules)

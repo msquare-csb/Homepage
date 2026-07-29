@@ -1,0 +1,16 @@
+{
+  "name": "msq-lab-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/run-next.mjs dev",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/run-next.mjs build",
+    "start": "node scripts/run-next.mjs start"
+  },
+  "dependencies": {
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

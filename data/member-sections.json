@@ -1,0 +1,97 @@
+{
+  "currentSections": [
+    {
+      "id": "postdoc",
+      "keys": [
+        "Postdoc"
+      ],
+      "label": "Postdoctoral Researcher"
+    },
+    {
+      "id": "phd",
+      "keys": [
+        "Ph.D.",
+        "Integrated Ph.D."
+      ],
+      "label": "Ph.D. / Integrated Ph.D. Students"
+    },
+    {
+      "id": "masters",
+      "keys": [
+        "Masters"
+      ],
+      "label": "M.S. Students"
+    },
+    {
+      "id": "undergrad",
+      "keys": [
+        "Undergrad"
+      ],
+      "label": "Undergraduates"
+    },
+    {
+      "id": "staff",
+      "keys": [
+        "Staff"
+      ],
+      "label": "Administration Staff"
+    }
+  ],
+  "alumniSections": [
+    {
+      "id": "alumni",
+      "keys": [
+        "Alumni"
+      ],
+      "label": "Alumni"
+    }
+  ],
+  "alumniCareerTrackConfig": {
+    "academia": {
+      "key": "academia",
+      "label": "Academia",
+      "color": "#5568a6"
+    },
+    "graduate": {
+      "key": "graduate",
+      "label": "Study",
+      "color": "#5f8f76"
+    },
+    "research": {
+      "key": "research",
+      "label": "Research",
+      "color": "#8577ba"
+    },
+    "industry": {
+      "key": "industry",
+      "label": "Industry",
+      "color": "#ce8050"
+    },
+    "exploring": {
+      "key": "exploring",
+      "label": "Exploring",
+      "color": "#92a0b3"
+    }
+  },
+  "alumniCareerTrackOrder": [
+    "academia",
+    "research",
+    "graduate",
+    "industry",
+    "exploring"
+  ],
+  "alumniCareerTrackManualByName": {
+    "Junhyuk Kang": "research",
+    "Jun Hyuk Kang": "research",
+    "Hyunseok Ko": "academia",
+    "Giulio Fatti": "academia",
+    "Upendra Kumar": "academia",
+    "Donggeon Lee": "industry",
+    "Sangmin Jeong": "industry",
+    "Sanggu Lee": "industry",
+    "Yujeong Park": "industry",
+    "Woongchan Kim": "industry",
+    "Suyeon Jang": "graduate",
+    "Gihwan Kim": "exploring"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "links": [
+    {
+      "href": "/",
+      "label": "Home"
+    },
+    {
+      "href": "/pi",
+      "label": "PI"
+    },
+    {
+      "href": "/research",
+      "label": "Research"
+    },
+    {
+      "href": "/members/current",
+      "label": "Members"
+    },
+    {
+      "href": "/outcomes",
+      "label": "Outcomes"
+    },
+    {
+      "href": "/activities",
+      "label": "Activities"
+    },
+    {
+      "href": "/news",
+      "label": "News"
+    }
+  ]
+}

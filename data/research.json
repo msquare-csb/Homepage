@@ -1,0 +1,228 @@
+[
+  {
+    "title": "Multiscale & Multiphysics Modeling",
+    "slug": "multiscale-multiphysics",
+    "image": "/images/Research/multiscale-multiphysics.png",
+    "focus": "This topic investigates phenomena across multiple spatial and temporal scales, from atomic interactions and microstructural evolution to macroscopic responses and device-level performance. It also examines how coupled mechanical, thermal, chemical, electrical, electrochemical, and interfacial phenomena influence materials and devices. By integrating simulations with experimental observations, we seek to establish practical design principles for energy, electronic, and functional materials systems.",
+    "methods": [
+      "Multiscale Modeling: Use first-principles calculations, molecular dynamics simulations, and continuum-level modeling to obtain scale-specific information and transfer relevant parameters between models. Examples include relating atomic energetics to transport, particle interactions during processing to microstructure formation, and local structural features to macroscopic or device-level responses.",
+      "Multiphysics Modeling: Couple governing equations and boundary conditions to represent interacting physical fields within a simulation. Examples include stress-assisted transport, reaction-induced deformation, heat generation, and electromechanical coupling.",
+      "Computational Design Exploration: Systematically explore combinations of material parameters, processing conditions, and device configurations through simulation to identify promising design regions, evaluate trade-offs, and prioritize candidates for further investigation."
+    ],
+    "deliverables": [
+      "Mechanistic Insights: Clear identification of the dominant mechanisms and interactions responsible for observed phenomena and performance trends.",
+      "Quantitative Predictions: Simulation-based estimates of properties and responses under conditions that are difficult to isolate or measure experimentally.",
+      "Design Guidelines: Practical criteria for selecting compositions, structures, processing conditions, and device configurations to achieve target performance."
+    ],
+    "relatedPapers": [
+      {
+        "title": "Multiscale insights enable rational design of solvent-free dry electrode processing for advanced battery electrode fabrication",
+        "url": "https://doi.org/10.1038/s43246-025-01046-0",
+        "meta": "Communications Materials, 2026"
+      },
+      {
+        "title": "A versatile strategy for hybridizing small experimental and large simulation data: A case for ceramic tape-casting process",
+        "url": "https://doi.org/10.1016/j.matdes.2023.112357",
+        "meta": "Materials & Design, 2023"
+      },
+      {
+        "title": "Flexoelectric-boosted piezoelectricity of BaTiO3@SrTiO3 core-shell nanostructure determined by multiscale simulations for flexible energy harvesters",
+        "url": "https://doi.org/10.1016/j.nanoen.2021.106469",
+        "meta": "Nano Energy, 2021"
+      }
+    ]
+  },
+  {
+    "title": "Nucleation Theory",
+    "slug": "nucleation-theory",
+    "image": "/images/Research/nucleation-theory.png",
+    "focus": "This topic targets phase-selection control by combining thermodynamic driving-force analysis, reaction-network interpretation, and growth-condition optimization for oxide and solid-electrolyte systems.",
+    "methods": [
+      "Phase-Formation Pathway Analysis: Map target, intermediate, metastable, and competing phase pathways using reaction energetics and chemical-potential constraints.",
+      "First-Principles Parameterization: Calculate reaction energies, defect energetics, surface/interface energies, and strain contributions using DFT-based simulations.",
+      "Atomistic Free-Energy Sampling: Use MD and PLUMED-based enhanced sampling to evaluate transition coordinates, intermediate-state stability, and nucleation barriers.",
+      "Nucleation and Growth Modeling: Integrate thermodynamic driving forces, kinetic barriers, and mass-transport effects to predict polymorph selection and phase evolution."
+    ],
+    "deliverables": [
+      "Phase-Formation Roadmaps: Ranked formation pathways that reveal how target, intermediate, metastable, and competing phases evolve during synthesis.",
+      "Phase-Selectivity Maps: Condition-dependent maps of stability, metastability, and nucleation-favored regimes for rational phase control.",
+      "Simulation-Derived Parameters: DFT/MD/PLUMED-based parameters describing reaction energetics, interfacial effects, free-energy barriers, and nucleation kinetics.",
+      "Synthesis Design Rules: Actionable process-window guidelines for selective target-phase formation, impurity-phase suppression, and reproducible growth."
+    ],
+    "relatedPapers": [
+      {
+        "title": "Identification of Impurity-Minimizing Synthesis Pathways for LAGP via Thermodynamic and Chemical Reaction Network-Based Analysis",
+        "url": "https://doi.org/10.1021/acs.jpcc.5c04247",
+        "meta": "The Journal of Physical Chemistry C, 2025"
+      },
+      {
+        "title": "Predicting the synthesizability of double perovskite halides via interface reaction pathfinding",
+        "url": "https://doi.org/10.1021/acs.chemmater.3c03323",
+        "meta": "Chemistry of Materials, 2024"
+      },
+      {
+        "title": "Phase Evolution in La-Alloyed β-Ga2O3 Nanofibers: Experimental and DFT Simulation Insights",
+        "url": "https://doi.org/10.1021/acsomega.4c11050",
+        "meta": "ACS Omega, 2025"
+      }
+    ]
+  },
+  {
+    "title": "AI-Assisted Synthesis Recipe Design",
+    "slug": "ai-assisted-synthesis-recipes",
+    "image": "/images/Research/ai-synthesis-recipes.png",
+    "focus": "We develop AI-assisted workflows that integrate synthesis knowledge extracted from the literature, physics- and simulation-informed descriptors, and experimental data to identify promising process conditions for experimental validation. Our research focuses on transforming heterogeneous knowledge from publications, simulations, and experiments into structured synthesis datasets; developing predictive models for synthesis outcomes and material properties; and prioritizing experimentally testable process conditions.",
+    "methods": [
+      "Synthesis Knowledge Structuring: Extract and standardize materials, processing conditions, characterization results, and synthesis outcomes from publications and experimental records.",
+      "Synthesis and Property Modeling: Develop and validate data-driven models that relate processing variables to synthesis feasibility and target properties.",
+      "Candidate Prioritization: Combine predictive search, domain knowledge, and optimization methods to rank candidate process conditions for experimental validation."
+    ],
+    "deliverables": [
+      "Prioritized Candidates: Ranked process-condition candidates for targeted materials systems.",
+      "Interpretable Design Insights: Quantitative relationships between synthesis variables, predicted outcomes, and material-performance trends.",
+      "Iterative Experiment-Model Learning: Workflows that incorporate experimental feedback to refine models and guide subsequent experiments."
+    ],
+    "relatedPapers": [
+      {
+        "title": "AI-driven quantitative review of mobility-stability trade-off in oxide semiconductors",
+        "url": "https://doi.org/10.1186/s40580-026-00535-3",
+        "meta": "Nano Convergence, 2026"
+      },
+      {
+        "title": "Machine learning-enhanced design of lead-free halide perovskite materials using density functional theory",
+        "url": "https://doi.org/10.1016/j.cap.2024.10.012",
+        "meta": "Current Applied Physics, 2024"
+      },
+      {
+        "title": "Predicting the synthesizability of double perovskite halides via interface reaction pathfinding",
+        "url": "https://doi.org/10.1021/acs.chemmater.3c03323",
+        "meta": "Chemistry of Materials, 2024"
+      }
+    ]
+  },
+  {
+    "title": "Oxide Semiconductors",
+    "slug": "semiconductor-materials-processing",
+    "image": "/images/Research/semiconductor-materials.png",
+    "focus": "This topic centers on three tasks: extracting actionable insights from large-scale experimental data and computational screening, building predictive models for the structural and thermodynamic stability of oxide semiconductors, and converting these findings into practical, high-performance thin-film transistor (TFT) fabrication strategies.",
+    "methods": [
+      "Knowledge Structuring: Organize comprehensive experimental datasets using Large Language Model (LLM)-powered extraction to identify strategies to achieve high performance.",
+      "Modeling for Synthesizability: Evaluate thermodynamic phase diagrams and the effects of epitaxial strain to predict the feasibility of synthesizing heterostructural alloys.",
+      "Design-Space Prioritization: Prioritize optimal fabrication parameters and architectures—such as Plasma-Enhanced Atomic Layer Deposition (PEALD), in situ capping layers, and precise cation doping—to overcome the inherent mobility-stability trade-off."
+    ],
+    "deliverables": [
+      "Recipe Candidates: Ranked synthesis conditions, including specific sub-cycle ratios for Atomically-Ordered IGZO, optimal post-deposition annealing windows, and strategic doping compositions (e.g., Ytterbium-doped IZO) for targeted high-mobility and extreme reliability.",
+      "Decision Support: Interpretable thermodynamic indicators and quantitative visualizations linking input variables (such as atomic structure, strain, and gate insulator selection) to expected device stability, subgap defect suppression, and carrier transport.",
+      "Faster Iteration: A streamlined framework connecting AI-driven literature reviews and ab initio computational design directly to experimental validation, enabling the rapid development of next-generation semiconductor devices."
+    ],
+    "relatedPapers": [
+      {
+        "title": "AI-driven quantitative review of mobility-stability trade-off in oxide semiconductors",
+        "url": "https://doi.org/10.1186/s40580-026-00535-3",
+        "meta": "Nano Convergence, 2026"
+      },
+      {
+        "title": "Ultra-High Mobility Atomically-Ordered InGaZnO Transistors Through Atomic Layer Deposition",
+        "url": "https://doi.org/10.1002/aelm.202500137",
+        "meta": "Advanced Electronic Materials, 2025"
+      }
+    ]
+  },
+  {
+    "title": "Topological Semimetals",
+    "slug": "topological-semimetals",
+    "image": "/images/Research/topological-semimetals-placeholder.png",
+    "focus": "This topic develops an end-to-end workflow for discovering and validating topological semimetals: screening broad materials spaces, resolving bulk and surface topology, evaluating nanoscale transport and resistivity, and demonstrating the characteristics of an amorphous topological semimetal.",
+    "methods": [
+      "High-Throughput Candidate Screening: Screen materials databases using thermodynamic stability, electronic structure, spin–orbit-sensitive descriptors, and automated topology indicators to prioritize promising Dirac and Weyl semimetals.",
+      "Topological and Electrical Properties via DFT–Tight-Binding: Combine first-principles DFT with Wannier-based tight-binding models to locate Dirac and Weyl crossings, determine Weyl-node chirality, and calculate band structures, Fermi arcs, Fermi surfaces, and surface spectral functions. Evaluate thickness-dependent transmission and resistivity.",
+      "Verification of Amorphous Topology and Robustness: Use real-space Bott-index calculations and surface-resolved electronic-state analysis to verify the topological nature of amorphous structures and assess their robustness."
+    ],
+    "deliverables": [
+      "Ranked Candidate Portfolio for Post-Cu Interconnects: A prioritized list of topological semimetals screened for post-Cu interconnect applications.",
+      "Validated Topological Characteristics & Transport Performance: DFT–tight-binding agreement, crossing positions and chiralities, Fermi-arc and Fermi-surface maps, surface spectral functions, and nanoscale transport trends, culminating in post-Cu screening based on figures of merit and cohesive energy.",
+      "Amorphous Topology & Disorder Robustness: Definitive evidence and structural guidance showing whether nontrivial topology persists after amorphization."
+    ],
+    "relatedPapers": [],
+    "relatedPapersNote": "Related publications will be added as they become available."
+  },
+  {
+    "title": "Power Semiconductors",
+    "slug": "power-semiconductors",
+    "image": "/images/Research/power-semiconductors-placeholder.png",
+    "focus": "This Application Session investigates the materials and manufacturing foundations of next-generation power semiconductors. We connect wide- and ultra-wide-bandgap material design with scalable epitaxial processing and physics-informed process engineering, examining how reaction chemistry, transport, thermal environments, and microstructural evolution determine material quality, reproducibility, and device readiness. Gallium oxide serves as a representative research platform, while the resulting methods are transferable to broader power-semiconductor materials and vapor-phase manufacturing technologies.",
+    "methods": [
+      "Materials & Growth Mechanisms: Use first-principles calculations, thermodynamic analysis, and nucleation theory to reveal reaction pathways, parasitic growth, and defect-forming mechanisms in wide-bandgap semiconductor synthesis.",
+      "Multiphysics Process Modeling: Couple fluid dynamics, heat transfer, and precursor transport from reactor to substrate scales to connect operating conditions with local growth environments, film formation, and spatial uniformity.",
+      "Machine Learning Process Optimization: Combine predictive simulation, targeted epitaxial growth, advanced materials characterization, and surrogate modeling to validate mechanisms and identify robust process windows with reduced trial and error."
+    ],
+    "deliverables": [
+      "Mechanism-Based Design Rules: Generalizable principles for coordinating reaction chemistry, mass transport, and thermal management to stabilize epitaxy and control power-semiconductor material quality.",
+      "Uniform & Reproducible Materials: Transferable strategies for suppressing parasitic reactions and improving film uniformity, morphology, crystallinity, defect control, and process-to-process consistency.",
+      "Scale-Up & Manufacturing Frameworks: Predictive process maps and optimization workflows for larger-area deposition, reactor redesign, and extension to related wide-bandgap materials and vapor-phase manufacturing platforms."
+    ],
+    "relatedPapers": [
+      {
+        "title": "Design of optimized halide vapor phase epitaxy (HVPE) conditions for uniform α-Ga2O3 growth based on CFD analysis",
+        "url": "https://doi.org/10.1007/s43207-025-00523-z",
+        "meta": "Journal of the Korean Ceramic Society, 2025"
+      },
+      {
+        "title": "A pre-reaction suppressing strategy for α-Ga2O3 halide vapor pressure epitaxy using asymmetric precursor gas flow",
+        "url": "https://doi.org/10.1039/d2ce00222a",
+        "meta": "CrystEngComm, 2022"
+      }
+    ]
+  },
+  {
+    "title": "Ferroelectrics & Dielectrics",
+    "slug": "ferroelectrics-dielectrics",
+    "image": "/images/Research/ferroelectrics-dielectrics-placeholder.png",
+    "focus": "This research focuses on the discovery, synthesis, and multiscale modeling of ferroelectric and dielectric materials. By connecting data-driven synthesis planning with nucleation kinetics and continuum-scale simulations, we aim to establish practical design rules for phase stabilization, polarization control, and reliable device operation.",
+    "methods": [
+      "ML/LLM-Based Synthesis Planning: Extract literature-grounded knowledge and generate candidate materials, process conditions, and synthesis routes using machine-learning and multi-agent LLM frameworks.",
+      "Nucleation Theory: Quantify the thermodynamic driving forces and kinetic barriers governing crystallization, polymorph selection, and metastable phase formation.",
+      "FEM Modeling: Simulate coupled electrical, thermal, mechanical, and transport phenomena in thin films, multilayers, and device structures."
+    ],
+    "deliverables": [
+      "Synthesis Pathway Recommendations: Evidence-grounded recommendations of candidate materials, synthesis routes, and process conditions for targeted ferroelectric and dielectric properties.",
+      "Phase-Selection Maps: Condition-dependent maps linking composition, temperature, pressure, interfaces, and electric fields to stable and metastable phase formation.",
+      "Device and Process Design Rules: Actionable guidelines for optimizing polarization, coercive field, dielectric response, reliability, and device scalability."
+    ],
+    "relatedPapers": [],
+    "relatedPapersNote": "Related publications will be added as they become available."
+  },
+  {
+    "title": "Battery Materials and Processing",
+    "slug": "battery-materials-processing",
+    "image": "/images/Research/battery-materials.png",
+    "focus": "This topic examines how materials chemistry, electrode architecture, and processing conditions jointly influence battery performance. We study particle and binder behavior during electrode fabrication, chemical and electrochemical stability at electrode-electrolyte interfaces, and structural strategies for uniform ion transport, reversible lithium storage, and stable cycling.",
+    "methods": [
+      "Electrode Process Modeling: Analyze stress transfer, particle rearrangement, binder fibrillation, and microstructure formation during electrode fabrication to connect processing conditions with electrode integrity and transport pathways.",
+      "Interface and Transport Analysis: Evaluate reaction energetics, chemical and electrochemical stability, ionic conductivity, lithiophilicity, and mechanical properties to assess coatings, electrolytes, and interfacial materials.",
+      "Electrochemical and Structural Analysis: Examine how electrode and current-collector structures affect ion distribution, lithium plating and stripping, dendrite formation, and cycling reversibility."
+    ],
+    "deliverables": [
+      "Manufacturing Guidelines: Processing windows and microstructure targets for uniform, mechanically robust, and high-loading electrodes.",
+      "Interface Design Criteria: Material-selection criteria for coatings, electrolytes, and interfacial layers with favorable stability, ion transport, and dendrite-suppression characteristics.",
+      "Stability and Reversibility Strategies: Material and structural design directions for homogeneous lithium deposition, reduced side reactions, and improved cycling stability."
+    ],
+    "relatedPapers": [
+      {
+        "title": "Multiscale insights enable rational design of solvent-free dry electrode processing for advanced battery electrode fabrication",
+        "url": "https://doi.org/10.1038/s43246-025-01046-0",
+        "meta": "Communications Materials, 2026"
+      },
+      {
+        "title": "Rational material design of chemically inert oxide anode coating layers for lithium metal and all-solid-state batteries",
+        "url": "https://doi.org/10.1016/j.apsadv.2025.100842",
+        "meta": "Applied Surface Science Advances, 2025"
+      },
+      {
+        "title": "Enhancing electrochemical reversibility in lithium metal batteries through structural engineering of flexible composite current collectors",
+        "url": "https://doi.org/10.1038/s41528-025-00474-9",
+        "meta": "npj Flexible Electronics, 2025"
+      }
+    ]
+  }
+]

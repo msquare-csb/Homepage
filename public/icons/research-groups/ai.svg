@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <title>AI microchip</title>
+  <g stroke="#0F2F46" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="8" y="8" width="24" height="24" rx="3"/>
+    <rect x="12" y="12" width="16" height="16" rx="1.5"/>
+    <path d="M14 4v4M20 4v4M26 4v4M14 32v4M20 32v4M26 32v4"/>
+    <path d="M4 14h4M4 20h4M4 26h4M32 14h4M32 20h4M32 26h4"/>
+  </g>
+  <path fill="#0F2F46" fill-rule="evenodd" d="m13.8 25.5 3.6-11h2.4l3.6 11h-2.3l-.7-2.2h-3.6l-.7 2.2h-2.3Zm3.6-4.2h2.4l-1.2-3.8-1.2 3.8Z"/>
+  <path fill="#0F2F46" d="M24.5 14.5h2.2v11h-2.2z"/>
+</svg>

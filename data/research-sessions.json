@@ -1,0 +1,51 @@
+[
+  {
+    "key": "theoretical",
+    "index": "01",
+    "title": "Theoretical Session",
+    "topics": [
+      {
+        "slug": "ai-assisted-synthesis-recipes"
+      },
+      {
+        "slug": "multiscale-multiphysics",
+        "title": "Multiscale Modeling"
+      },
+      {
+        "slug": "nucleation-theory"
+      }
+    ]
+  },
+  {
+    "key": "application",
+    "index": "02",
+      "title": "Application Session",
+      "topics": [
+      {
+        "slug": "semiconductor-materials-processing",
+        "title": "Oxide Semiconductors",
+        "image": "/images/Research/semiconductor-materials.png"
+      },
+      {
+        "slug": "topological-semimetals",
+        "title": "Topological Semimetals",
+        "image": "/images/Research/topological-semimetals-placeholder.png"
+      },
+      {
+        "slug": "power-semiconductors",
+        "title": "Power Semiconductors",
+        "image": "/images/Research/power-semiconductors-placeholder.png"
+      },
+      {
+        "slug": "ferroelectrics-dielectrics",
+        "title": "Ferroelectrics & Dielectrics",
+        "image": "/images/Research/ferroelectrics-dielectrics-placeholder.png"
+      },
+      {
+        "slug": "battery-materials-processing",
+        "title": "Battery Materials and Processing",
+        "image": "/images/Research/battery-materials.png"
+      }
+    ]
+  }
+]
