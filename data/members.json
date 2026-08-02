@@ -7,9 +7,12 @@
     },
     {
         "name":  "Hyeon Woo Kim",
-        "category":  "Postdoc",
+        "category":  "Alumni",
         "role":  "Postdoctoral Researcher",
         "affiliation":  "LAMP, Ajou University",
+        "currentAffiliation":  "Washington University in St. Louis",
+        "careerTrack":  "academia",
+        "alumniSince":  "2025-09",
         "email":  "khw93@ajou.ac.kr",
         "scholar_url":  "https://scholar.google.co.kr/citations?user=K-JYfggAAAAJ&hl=ko&oi=ao",
         "photo":  "/images/members/hyunwoo_kim.jpg",
@@ -708,5 +711,4 @@
                         ]
     }
 ]
-
 

@@ -184,7 +184,6 @@ test("home research groups follow the Members page process and in-process order"
     AI: ["Han Uk Lee", "Dong Won Jeon", "Ji Hoon Hong", "Juhyeon Ha", "Jindong Hwang"],
     "Multi-scale": ["Min Sung Kang", "Ji Hoon Hong", "Jeu Shin", "Jonghun Seo"],
     Nucleation: [
-      "Hyeon Woo Kim",
       "Han Uk Lee",
       "Min Sung Kang",
       "Jimin Kim",
@@ -830,6 +829,23 @@ test("current members include Hee Soo Kim in the staff section", () => {
   assert.deepEqual(staffSection.keys, ["Staff"]);
   assert.equal(staffSection.label, "Administration Staff");
   assert.equal(config.currentSections.at(-1).id, "staff");
+});
+
+test("Hyeon Woo Kim is listed as an alumnus at Washington University in St. Louis", () => {
+  const members = readJson("data/members.json");
+  const config = readJson("data/member-sections.json");
+  const member = members.find((entry) => entry.name === "Hyeon Woo Kim");
+
+  assert.ok(member, "Hyeon Woo Kim should exist in member data");
+  assert.equal(member.category, "Alumni");
+  assert.equal(member.currentAffiliation, "Washington University in St. Louis");
+  assert.equal(member.careerTrack, "academia");
+  assert.equal(member.alumniSince, "2025-09");
+  assert.equal(
+    config.currentSections.some((section) => section.id === "postdoc"),
+    false,
+    "the empty postdoctoral researcher section should stay hidden"
+  );
 });
 
 test("undergraduate members include Chaeeun Song followed by Chanhwi Yun", () => {

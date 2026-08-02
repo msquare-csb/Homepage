@@ -1,13 +1,6 @@
 {
   "currentSections": [
     {
-      "id": "postdoc",
-      "keys": [
-        "Postdoc"
-      ],
-      "label": "Postdoctoral Researcher"
-    },
-    {
       "id": "phd",
       "keys": [
         "Ph.D.",
@@ -81,6 +74,7 @@
     "exploring"
   ],
   "alumniCareerTrackManualByName": {
+    "Hyeon Woo Kim": "academia",
     "Junhyuk Kang": "research",
     "Jun Hyuk Kang": "research",
     "Hyunseok Ko": "academia",
