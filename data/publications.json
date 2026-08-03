@@ -3,6 +3,72 @@
   "selected": [
     {
       "year": 2026,
+      "title": "Nanoscale imaging of charge transport across the semimetal-semiconductor interface in monolithic platinum diselenide",
+      "authors": "Yeongyu Kim, Minseung Gyeon, Ji Hoon Hong, Seongmun Eom, Kunwoo Park, Hongsik Park, Hae Yeon Lee, Sung Beom Cho, Kibum Kang, Seungbum Hong",
+      "venue": "Matter 9 (7), 102873",
+      "date": "2026-07-01",
+      "first_authors": [
+        "Yeongyu Kim",
+        "Minseung Gyeon",
+        "Ji Hoon Hong"
+      ],
+      "corresponding_authors": [
+        "Sung Beom Cho",
+        "Kibum Kang",
+        "Seungbum Hong"
+      ],
+      "url": "https://doi.org/10.1016/j.matt.2026.102873"
+    },
+    {
+      "year": 2026,
+      "title": "Strain-decoupled core/shell perovskite nanocrystals for high-efficiency light-emitting diodes",
+      "authors": "Daehwan Kim, Han Uk Lee, Jongho Park, Hyeon Woo Kim, Jun-Su Yeo, Sung Beom Cho, Tae-Hee Han",
+      "venue": "Materials Today 94, 103249",
+      "date": "2026-05-01",
+      "first_authors": [
+        "Daehwan Kim",
+        "Han Uk Lee",
+        "Jongho Park"
+      ],
+      "corresponding_authors": [
+        "Sung Beom Cho",
+        "Tae-Hee Han"
+      ],
+      "url": "https://doi.org/10.1016/j.mattod.2026.103249"
+    },
+    {
+      "year": 2026,
+      "title": "In Situ Amidation-Derived Interfacial Modulation for Homogeneous Ultra-High Nanoparticle Loading Toward Robust and Flexible Piezoelectric Composites",
+      "authors": "HakSu Jang, In Beom Heo, Changyeon Baek, Dong Won Jeon, Donghun Lee, Nagamalleswara Rao Alluri, Hyejeong Choi, Hyo Min Jeon, Sung Hoon Kim, Hyunseung Kim, Jihun Choi, Hyun-Soo Chang, Chang Kyu Jeong, Min-Ku Lee, Jun Mo Koo, Tiandong Zhang, Geon-Tae Hwang, Sung Beom Cho, Gyoung-Ja Lee, Hyeong Min Jin, Kwi-Il Park",
+      "venue": "Advanced Functional Materials 36 (36), e30216",
+      "date": "2026-02-15",
+      "first_authors": [
+        "HakSu Jang",
+        "In Beom Heo",
+        "Changyeon Baek"
+      ],
+      "corresponding_authors": [
+        "Gyoung-Ja Lee",
+        "Hyeong Min Jin",
+        "Kwi-Il Park"
+      ],
+      "url": "https://doi.org/10.1002/adfm.202530216"
+    },
+    {
+      "year": 2026,
+      "title": "First-Principles Models of Triboelectrification",
+      "authors": "Giulio Fatti, John Cavin, Hyunseok Ko, Rohan Mishra, Daniele Dini, Sung Beom Cho",
+      "venue": "Small Methods 10 (4), e01782",
+      "date": "2026-02-01",
+      "first_authors": "Giulio Fatti",
+      "corresponding_authors": [
+        "Giulio Fatti",
+        "Sung Beom Cho"
+      ],
+      "url": "https://doi.org/10.1002/smtd.202501782"
+    },
+    {
+      "year": 2026,
       "title": "AI-driven quantitative review of mobility-stability trade-off in oxide semiconductors",
       "authors": "Ji Hoon Hong, Chi-Hoon Lee, Hyeon Woo Kim, Dong Won Jeon, Jun Hyuk Kang, Yoon-Seo Kim, Ji-Su Bae, Seonggil Heo, Sangyeon Lee, Jooyeong Na, Jaegook You, Soyeon Hong, Hyunsouk Cho, Jin-Seong Park, Sung Beom Cho",
       "venue": "Nano Convergence 13, Article 4 (2026)",
@@ -22,8 +88,8 @@
       "year": 2026,
       "title": "Multiscale insights enable rational design of solvent-free dry electrode processing for advanced battery electrode fabrication",
       "authors": "Jun Hyuk Kang, Woojin Jeong, Min Sung Kang, Hyeon Woo Kim, Dong Won Jeon, Han Uk Lee, Ji Hoon Hong, Seungmin Han, Minseok Kim, Subi Yang, Dongsoo Lee, Patrick Joohyun Kim, Taeseup Song, Moonsu Yoon, Laisuo Su, Junghyun Choi, Sung Beom Cho",
-      "venue": "Communications Materials",
-      "date": "2026-01-01",
+      "venue": "Communications Materials 7, Article 34 (2026)",
+      "date": "2026-01-29",
       "first_authors": [
         "Jun Hyuk Kang",
         "Woojin Jeong"
