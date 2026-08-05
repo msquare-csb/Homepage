@@ -45,11 +45,6 @@
       "label": "Academia",
       "color": "#5568a6"
     },
-    "graduate": {
-      "key": "graduate",
-      "label": "Study",
-      "color": "#5f8f76"
-    },
     "research": {
       "key": "research",
       "label": "Research",
@@ -59,19 +54,12 @@
       "key": "industry",
       "label": "Industry",
       "color": "#ce8050"
-    },
-    "exploring": {
-      "key": "exploring",
-      "label": "Exploring",
-      "color": "#92a0b3"
     }
   },
   "alumniCareerTrackOrder": [
     "academia",
     "research",
-    "graduate",
-    "industry",
-    "exploring"
+    "industry"
   ],
   "alumniCareerTrackManualByName": {
     "Hyeon Woo Kim": "academia",
@@ -84,8 +72,6 @@
     "Sangmin Jeong": "industry",
     "Sanggu Lee": "industry",
     "Yujeong Park": "industry",
-    "Woongchan Kim": "industry",
-    "Suyeon Jang": "graduate",
-    "Gihwan Kim": "exploring"
+    "Woongchan Kim": "industry"
   }
 }

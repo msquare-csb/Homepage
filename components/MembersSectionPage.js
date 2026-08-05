@@ -55,15 +55,6 @@ function normalizeAlumniCareerTrack(value) {
     return "academia";
   }
   if (
-    normalized === "graduate" ||
-    normalized === "study" ||
-    normalized === "graduate study" ||
-    normalized === "further study" ||
-    normalized === "higher education"
-  ) {
-    return "graduate";
-  }
-  if (
     normalized === "research" ||
     normalized === "research institute" ||
     normalized === "research sector" ||
@@ -79,16 +70,6 @@ function normalizeAlumniCareerTrack(value) {
   ) {
     return "industry";
   }
-  if (
-    normalized === "exploring" ||
-    normalized === "in transition" ||
-    normalized === "open" ||
-    normalized === "unknown" ||
-    normalized === "unspecified" ||
-    normalized === "tbd"
-  ) {
-    return "exploring";
-  }
   return null;
 }
 
@@ -100,7 +81,7 @@ function inferAlumniCareerTrack(member) {
   if (explicitTrack) {
     return explicitTrack;
   }
-  return getManualCareerTrackByName(member.name) || "exploring";
+  return getManualCareerTrackByName(member.name);
 }
 
 function getAlumniCareerTrackStats(alumniMembers) {
@@ -111,7 +92,9 @@ function getAlumniCareerTrackStats(alumniMembers) {
 
   alumniMembers.forEach((member) => {
     const key = inferAlumniCareerTrack(member);
-    counts[key] += 1;
+    if (key && Object.hasOwn(counts, key)) {
+      counts[key] += 1;
+    }
   });
 
   return alumniCareerTrackOrder.map((key) => ({

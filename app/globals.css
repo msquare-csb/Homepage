@@ -1005,13 +1005,15 @@ h2{font-size:28px;margin:10px 0 12px;}
   padding:0;
   list-style:none;
   display:grid;
-  grid-template-columns:repeat(5, minmax(0, 1fr));
-  gap:8px;
+  grid-template-columns:repeat(3, minmax(0, 220px));
+  justify-content:center;
+  gap:12px;
 }
 .alumniCareerStat{
   display:flex;
   flex-direction:column;
-  align-items:flex-start;
+  align-items:center;
+  text-align:center;
   gap:5px;
   padding:7px 9px;
   border-radius:10px;
@@ -1027,6 +1029,7 @@ h2{font-size:28px;margin:10px 0 12px;}
 .alumniCareerStatLabelWrap{
   display:inline-flex;
   align-items:center;
+  justify-content:center;
   gap:7px;
   min-width:0;
 }
@@ -1051,8 +1054,9 @@ h2{font-size:28px;margin:10px 0 12px;}
 .alumniCareerStatMeta{
   display:inline-flex;
   align-items:center;
+  justify-content:center;
   gap:7px;
-  margin-left:23px;
+  margin-left:0;
   font-size:0.9rem;
   line-height:1.2;
 }
@@ -1368,14 +1372,11 @@ nextjs-portal{display:none!important;}
   .alumniCareerTotalPill{
     padding:4px 10px;
   }
-  .alumniCareerStats{
-    grid-template-columns:repeat(2, minmax(0, 1fr));
-  }
   .alumniCareerStat{
     gap:8px;
   }
   .alumniCareerStatMeta{
-    margin-left:22px;
+    margin-left:0;
     gap:6px;
     font-size:0.84rem;
   }
@@ -1427,6 +1428,7 @@ nextjs-portal{display:none!important;}
   }
 }
 @media (max-width: 560px){
+  .alumniCareerStats{grid-template-columns:1fr;}
   .homeFocusGrid{grid-template-columns:1fr;}
 }
 .researchDetails summary{cursor:pointer;list-style:none;font-weight:600;color:var(--brand);font-size:0.98rem;display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:rgba(37,99,235,0.08);width:fit-content;}

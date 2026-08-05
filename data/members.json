@@ -354,36 +354,6 @@
                         ]
     },
     {
-        "name":  "Jaeseok Hwang",
-        "category":  "Alumni",
-        "role":  "Undergraduate Research Intern",
-        "affiliation":  "Materials Science and Engineering, Ajou University",
-        "alumniSince":  "2026-07",
-        "email":  "issac2002@ajou.ac.kr",
-        "photo":  "/images/members/jaeseok_hwang.png",
-        "education":  [
-                          "B.S., Materials Science and Engineering, Ajou University"
-                      ],
-        "research":  [
-                         "Battery",
-                         "Nucleation"
-                     ],
-        "application":  "Battery / Nucleation",
-        "applicationDetails":  [
-                                   "Battery",
-                                   "Nucleation"
-                               ],
-        "applicationLabel":  "Research Interests",
-        "summaryTags":  [
-                            "FEM",
-                            "MD"
-                        ],
-        "methodology":  [
-                            "FEM",
-                            "MD"
-                        ]
-    },
-    {
         "name":  "Seojun Moon",
         "category":  "Undergrad",
         "role":  "Undergraduate Research Intern",
@@ -667,48 +637,6 @@
         "application":  "Machine-learning-based materials synthesizability prediction and semiconductor materials modeling",
         "methodology":  [
                             "Machine-learning-based materials synthesizability prediction and semiconductor materials modeling."
-                        ]
-    },
-    {
-        "name":  "Suyeon Jang",
-        "category":  "Alumni",
-        "role":  "Researcher",
-        "affiliation":  "Konkuk University",
-        "currentAffiliation":  "Konkuk University",
-        "email":  "suyeon2002@konkuk.ac.kr",
-        "photo":  "/images/members/suyeon_jang.jpg",
-        "education":  [
-                          "B.S., Chemical Engineering, Konkuk University"
-                      ],
-        "research":  [
-                         "Semiconductor solid-solution modeling and battery electrolyte modeling.",
-                         "Thermodynamic-data-driven reaction pathway search."
-                     ],
-        "application":  "Semiconductor solid-solution modeling and battery electrolyte modeling",
-        "methodology":  [
-                            "Semiconductor solid-solution modeling and battery electrolyte modeling.",
-                            "Thermodynamic-data-driven reaction pathway search."
-                        ]
-    },
-    {
-        "name":  "Gihwan Kim",
-        "category":  "Alumni",
-        "role":  "Researcher",
-        "affiliation":  "Military service",
-        "currentAffiliation":  "Military service",
-        "email":  "kghkai1807@ajou.ac.kr",
-        "photo":  "/images/members/gihwan_kim.png",
-        "education":  [
-                          "B.S. student, Materials Science and Engineering, Ajou University (double major in Software)"
-                      ],
-        "research":  [
-                         "Nucleation research using first-principles and molecular dynamics.",
-                         "Materials science research using natural language processing."
-                     ],
-        "application":  "Nucleation research using first-principles and molecular dynamics",
-        "methodology":  [
-                            "Nucleation research using first-principles and molecular dynamics.",
-                            "Materials science research using natural language processing."
                         ]
     }
 ]

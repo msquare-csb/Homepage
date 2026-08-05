@@ -852,6 +852,45 @@ test("Hyeon Woo Kim is listed as an alumnus at Washington University in St. Loui
   );
 });
 
+test("undergraduate-intern departures are omitted and unused career tracks are disabled", () => {
+  const members = readJson("data/members.json");
+  const config = readJson("data/member-sections.json");
+  const omittedNames = ["Jaeseok Hwang", "Suyeon Jang", "Gihwan Kim"];
+
+  omittedNames.forEach((name) => {
+    assert.equal(
+      members.some((member) => member.name === name),
+      false,
+      `${name} should not appear in member data`
+    );
+  });
+  assert.equal(config.alumniCareerTrackOrder.includes("graduate"), false);
+  assert.equal(Object.hasOwn(config.alumniCareerTrackConfig, "graduate"), false);
+  assert.equal(config.alumniCareerTrackOrder.includes("exploring"), false);
+  assert.equal(Object.hasOwn(config.alumniCareerTrackConfig, "exploring"), false);
+});
+
+test("Alumni career cards use a compact centered three-column layout", () => {
+  const css = readFileSync(join(rootDir, "app/globals.css"), "utf8");
+
+  assert.match(
+    css,
+    /\.alumniCareerStats\{[\s\S]*?grid-template-columns:repeat\(3, minmax\(0, 220px\)\);\s*justify-content:center;/
+  );
+  assert.match(
+    css,
+    /@media \(max-width: 560px\)\{\s*\.alumniCareerStats\{grid-template-columns:1fr;\}/
+  );
+  assert.match(
+    css,
+    /\.alumniCareerStat\{\s*display:flex;\s*flex-direction:column;\s*align-items:center;\s*text-align:center;/
+  );
+  assert.match(
+    css,
+    /\.alumniCareerStatMeta\{\s*display:inline-flex;\s*align-items:center;\s*justify-content:center;[\s\S]*?margin-left:0;/
+  );
+});
+
 test("undergraduate members include Chaeeun Song followed by Chanhwi Yun", () => {
   const members = readJson("data/members.json");
   const undergraduates = members.filter((member) => member.category === "Undergrad");
