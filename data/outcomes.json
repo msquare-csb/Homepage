@@ -1,14 +1,24 @@
 {
   "tools": [
     {
-      "title": "Recipe Generator",
+      "title": "Materials Synthesis AI Recipe Generator",
       "url": "https://materials-recipe.streamlit.app/",
-      "description": "Open-access materials synthesis recipe generator"
+      "description": "An AI-powered tool for generating materials synthesis recipes, developed in collaboration with iKnow Lab (PI: Prof. Hyunsouk Cho, Ajou University)."
     },
     {
-      "title": "Oxsemi",
+      "title": "Oxide Semiconductor AI Recipe Generator",
       "url": "https://oxsemi.yconnect.ai.kr/",
-      "description": "Oxide semiconductor big-data analysis and synthesis recipe recommendations"
+      "description": "An AI-powered tool for generating synthesis recipes for oxide semiconductors."
+    },
+    {
+      "title": "Solid-State Synthesis AI Recipe Generator",
+      "url": "https://ssr.recipe-generator.site/",
+      "description": "An AI-powered tool for predicting solid-state synthesis routes and generating corresponding recipes."
+    },
+    {
+      "title": "Gallium Oxide AI Recipe Generator",
+      "url": "https://ga2o3-recipe-generator.streamlit.app/",
+      "description": "An AI-powered tool for generating synthesis recipes for gallium oxide (Ga₂O₃)."
     }
   ],
   "publicationYearGroups": [

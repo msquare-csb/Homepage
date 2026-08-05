@@ -840,7 +840,11 @@ test("Hyeon Woo Kim is listed as an alumnus at Washington University in St. Loui
   assert.equal(member.category, "Alumni");
   assert.equal(member.currentAffiliation, "Washington University in St. Louis");
   assert.equal(member.careerTrack, "academia");
-  assert.equal(member.alumniSince, "2025-09");
+  assert.equal(member.alumniSince, "2026-08");
+  const datedAlumni = members
+    .filter((entry) => entry.category === "Alumni" && entry.alumniSince)
+    .sort((a, b) => b.alumniSince.localeCompare(a.alumniSince));
+  assert.equal(datedAlumni[0].name, "Hyeon Woo Kim");
   assert.equal(
     config.currentSections.some((section) => section.id === "postdoc"),
     false,
