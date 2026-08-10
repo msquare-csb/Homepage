@@ -999,6 +999,19 @@ test("outcomes data keeps publication grouping editable", () => {
   assert.ok(outcomes.publicationYearGroups.some((group) => group.maxYear <= 2021));
 });
 
+test("Advanced Materials perovskite LED paper keeps verified author roles", () => {
+  const publications = readJson("data/publications.json").selected;
+  const paper = publications.find(
+    (entry) => entry.url === "https://doi.org/10.1002/adma.202520499"
+  );
+
+  assert.ok(paper, "Advanced Materials perovskite LED paper should exist");
+  assert.equal(paper.date, "2026-04-19");
+  assert.equal(paper.venue, "Advanced Materials 38 (28), e20499");
+  assert.deepEqual(paper.first_authors, ["Jongho Park", "Jisu Ha", "Daehwan Kim"]);
+  assert.equal(paper.corresponding_authors, "Tae-Hee Han");
+});
+
 test("navigation data has stable labels and paths", () => {
   const navigation = readJson("data/navigation.json");
 
