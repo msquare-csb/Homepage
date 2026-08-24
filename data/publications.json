@@ -3,6 +3,23 @@
   "selected": [
     {
       "year": 2026,
+      "title": "Closed-Loop Solid-State Synthesis Planning for Materials Discovery With Large Language Models",
+      "authors": "Dong Won Jeon, Dong Hwi Kim, Taeyang Jeon, Joo Yeong Na, Heegyu Kim, Hyunsouk Cho, Dae Soo Jung, Ju Li, Jin-Sung Park, Sung Beom Cho",
+      "venue": "Advanced Materials, e74502",
+      "date": "2026-08-10",
+      "first_authors": [
+        "Dong Won Jeon",
+        "Dong Hwi Kim"
+      ],
+      "corresponding_authors": [
+        "Ju Li",
+        "Jin-Sung Park",
+        "Sung Beom Cho"
+      ],
+      "url": "https://doi.org/10.1002/adma.74502"
+    },
+    {
+      "year": 2026,
       "title": "Nanoscale imaging of charge transport across the semimetal-semiconductor interface in monolithic platinum diselenide",
       "authors": "Yeongyu Kim, Minseung Gyeon, Ji Hoon Hong, Seongmun Eom, Kunwoo Park, Hongsik Park, Hae Yeon Lee, Sung Beom Cho, Kibum Kang, Seungbum Hong",
       "venue": "Matter 9 (7), 102873",

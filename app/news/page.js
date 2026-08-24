@@ -29,7 +29,23 @@ export default function NewsPage() {
                       <span className="newsSimpleDate">{formatMonthDayYear(item.date)}</span>
                       <span className="newsSimpleTitle">{item.title}</span>
                     </span>
-                    <span className="newsSimpleText">{item.text}</span>
+                    <span className="newsSimpleText">
+                      {item.text}
+                      {item.sourceUrl ? (
+                        <>
+                          {" "}
+                          <a
+                            className="newsSourceLink"
+                            href={item.sourceUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {item.sourceLabel || "Read the source"}
+                            <span aria-hidden="true">↗</span>
+                          </a>
+                        </>
+                      ) : null}
+                    </span>
                   </span>
                   <svg
                     className="newsCardToggle"

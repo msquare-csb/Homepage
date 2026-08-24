@@ -88,6 +88,47 @@ test("AI Co-Scientist award news includes its image and winning project", () => 
   assert.doesNotMatch(newsPage, /newsImageModal/);
 });
 
+test("Advanced Materials Back Cover news includes the cover artwork and DOI", () => {
+  const news = readJson("data/news.json");
+  const newsPage = readFileSync(join(rootDir, "app/news/page.js"), "utf8");
+  const css = readFileSync(join(rootDir, "app/globals.css"), "utf8");
+  const item = news.find((entry) => entry.id === "2026-advanced-materials-back-cover");
+
+  assert.ok(item, "Advanced Materials Back Cover news should exist");
+  assert.equal(item.date, "2026-08-10");
+  assert.equal(
+    item.image,
+    "/images/News/2026.08.10-advanced-materials-back-cover.jpg"
+  );
+  assert.ok(
+    existsSync(
+      join(rootDir, "public/images/News/2026.08.10-advanced-materials-back-cover.jpg")
+    )
+  );
+  assert.match(item.title, /Dong Won Jeon's Paper/);
+  assert.match(item.title, /Published in Advanced Materials \(IF: 29\.1\)/);
+  assert.doesNotMatch(item.title, /Published Online/);
+  assert.match(item.title, /Selected for the Back Cover/);
+  assert.match(item.text, /IF: 29\.1/);
+  assert.doesNotMatch(item.text, /contributed equally|co-first authors/i);
+  assert.match(item.text, /10\.1002\/adma\.74502/);
+  assert.equal(
+    item.sourceUrl,
+    "https://www.skku.edu/skku_bak/campus/skk_comm/press.do?article.offset=0&articleLimit=10&articleNo=139171&mode=view"
+  );
+  assert.equal(item.sourceLabel, "Sungkyunkwan University News");
+  assert.match(newsPage, /className="newsSourceLink"/);
+  assert.match(newsPage, /href=\{item\.sourceUrl\}/);
+  assert.match(
+    newsPage,
+    /className="newsSimpleText">[\s\S]*?className="newsSourceLink"[\s\S]*?<\/summary>[\s\S]*?className="newsImagePanel"/
+  );
+  assert.match(
+    css,
+    /\.newsSimpleImage\{[\s\S]*?max-width:100%;[\s\S]*?object-fit:contain;/
+  );
+});
+
 test("Activities and News display dates in month/day/year order", async () => {
   const formatterPath = join(rootDir, "lib/dateDisplay.mjs");
   const activitiesPage = readFileSync(join(rootDir, "app/activities/page.js"), "utf8");
@@ -770,6 +811,19 @@ test("research application mobile selectors keep the row scrollable without shri
   assert.match(css, /@media \(max-width: 560px\)\{[\s\S]*?\.researchFlowSelectorGrid--application \.researchFlowSelectorLabel\{\s*font-size:0\.98rem;/);
 });
 
+test("research titles preserve descenders without changing card or font sizes", () => {
+  const css = readFileSync(join(rootDir, "app/globals.css"), "utf8");
+  const leadTitleRule = css.match(/\.researchFlowLeadTitle\{([^}]*)\}/)?.[1] || "";
+  const selectorLabelRule = css.match(/\.researchFlowSelectorLabel\{([^}]*)\}/)?.[1] || "";
+
+  [leadTitleRule, selectorLabelRule].forEach((rule) => {
+    assert.match(rule, /padding-bottom:0\.14em;/);
+    assert.match(rule, /margin-bottom:-0\.14em;/);
+  });
+  assert.match(css, /\.researchFlowSelector--theoretical/);
+  assert.match(css, /\.researchFlowSelector--application/);
+});
+
 test("research detail routes await Next dynamic params", () => {
   const page = readFileSync(join(rootDir, "app/research/[slug]/page.js"), "utf8");
 
@@ -1010,6 +1064,27 @@ test("Advanced Materials perovskite LED paper keeps verified author roles", () =
   assert.equal(paper.venue, "Advanced Materials 38 (28), e20499");
   assert.deepEqual(paper.first_authors, ["Jongho Park", "Jisu Ha", "Daehwan Kim"]);
   assert.equal(paper.corresponding_authors, "Tae-Hee Han");
+});
+
+test("Closed-Loop Solid-State Synthesis paper keeps verified author roles", () => {
+  const publications = readJson("data/publications.json").selected;
+  const paper = publications.find(
+    (entry) => entry.url === "https://doi.org/10.1002/adma.74502"
+  );
+
+  assert.ok(paper, "Closed-Loop Solid-State Synthesis paper should exist");
+  assert.equal(
+    paper.title,
+    "Closed-Loop Solid-State Synthesis Planning for Materials Discovery With Large Language Models"
+  );
+  assert.equal(paper.date, "2026-08-10");
+  assert.equal(paper.venue, "Advanced Materials, e74502");
+  assert.deepEqual(paper.first_authors, ["Dong Won Jeon", "Dong Hwi Kim"]);
+  assert.deepEqual(paper.corresponding_authors, [
+    "Ju Li",
+    "Jin-Sung Park",
+    "Sung Beom Cho"
+  ]);
 });
 
 test("navigation data has stable labels and paths", () => {
