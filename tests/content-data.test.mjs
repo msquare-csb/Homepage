@@ -116,7 +116,7 @@ test("Advanced Materials Back Cover news includes the cover artwork and DOI", ()
     item.sourceUrl,
     "https://www.skku.edu/skku_bak/campus/skk_comm/press.do?article.offset=0&articleLimit=10&articleNo=139171&mode=view"
   );
-  assert.equal(item.sourceLabel, "Sungkyunkwan University News");
+  assert.equal(item.sourceLabel, "Press Release");
   assert.match(newsPage, /className="newsSourceLink"/);
   assert.match(newsPage, /href=\{item\.sourceUrl\}/);
   assert.match(

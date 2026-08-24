@@ -644,7 +644,7 @@ h2{font-size:28px;margin:10px 0 12px;}
 .newsSourceLink{
   display:inline-flex;
   align-items:center;
-  gap:5px;
+  gap:0;
   margin-left:4px;
   color:#087aa0;
   font-weight:700;
