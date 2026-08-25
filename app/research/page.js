@@ -3,8 +3,8 @@ import researchSessions from "../../data/research-sessions.json";
 import ResearchShowcase from "./ResearchShowcase";
 
 export const metadata = {
-  title: "Research | M-Square Lab",
-  description: "M-Square Lab research topics and application areas."
+  title: "Research | Materials AI Modeling Laboratory",
+  description: "Research topics and application areas at the Materials AI Modeling Laboratory."
 };
 
 const topicBySlug = new Map(research.map((topic) => [topic.slug, topic]));

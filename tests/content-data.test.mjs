@@ -320,7 +320,7 @@ test("home intro copy is broad and welcome popup is disabled", () => {
 
   assert.equal(home.welcome.enabled, false);
   assert.ok(!home.intro.title.startsWith("AI-guided"));
-  assert.ok(home.intro.body.startsWith("M-Square Lab"));
+  assert.ok(home.intro.body.startsWith("Materials AI Modeling Laboratory"));
   assert.match(home.intro.title, /materials/i);
   assert.match(home.intro.body, /first-principles|molecular dynamics|multiscale|data-driven/i);
 });
@@ -386,7 +386,7 @@ test("home research card image areas use a plain white background", () => {
   assert.doesNotMatch(finalRule, /linear-gradient|radial-gradient/);
 });
 
-test("public-facing copy uses M-Square branding instead of MSQ", () => {
+test("public-facing copy uses Materials AI Modeling Laboratory branding", () => {
   const publicFacingFiles = [
     "README.md",
     ...listFiles("app", [".js", ".css"]),
@@ -396,8 +396,14 @@ test("public-facing copy uses M-Square branding instead of MSQ", () => {
 
   publicFacingFiles.forEach((relativePath) => {
     const content = readFileSync(join(rootDir, relativePath), "utf8");
-    assert.doesNotMatch(content, /\bMSQ\b/, `${relativePath} should not expose MSQ branding`);
-    assert.doesNotMatch(content, /\bM-square\b/, `${relativePath} should use M-Square capitalization`);
+    assert.doesNotMatch(content, /\bMSQ\b/i, `${relativePath} should not expose MSQ branding`);
+    assert.doesNotMatch(content, /\bM2\b/, `${relativePath} should not expose M2 branding`);
+    assert.doesNotMatch(content, /M[- ]Square/i, `${relativePath} should not expose M-Square branding`);
+    assert.doesNotMatch(
+      content,
+      /Materials Modeling Laboratory/i,
+      `${relativePath} should not expose the former laboratory name`
+    );
   });
 });
 
@@ -429,7 +435,7 @@ test("site footer address matches the SKKU Engineering Building 2 location", () 
     "Room 25139, Engineering Building 2, Sungkyunkwan University, 2066 Seobu-ro, Jangan-gu, Suwon, Gyeonggi-do 16419, Korea"
   );
   assert.equal(site.footerEmail, "sungcho@skku.edu");
-  assert.equal(site.footerCopyrightName, "M-Square Lab.");
+  assert.equal(site.footerCopyrightName, "Materials AI Modeling Laboratory.");
   assert.match(footer, /mailto:\$\{site\.footerEmail\}/);
 });
 
@@ -447,7 +453,7 @@ test("navigation and footer temporarily omit the image logo", () => {
   const css = readFileSync(join(rootDir, "app/globals.css"), "utf8");
 
   assert.doesNotMatch(nav, /LAB_logo\.png|className="navLogo/);
-  assert.match(nav, /<span className="navBrandText">Materials Modeling Laboratory<\/span>/);
+  assert.match(nav, /<span className="navBrandText">Materials AI Modeling Laboratory<\/span>/);
   assert.doesNotMatch(footer, /LAB_logo\.png|className="footerLogo/);
   assert.match(
     css,

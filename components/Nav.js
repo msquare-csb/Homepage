@@ -34,7 +34,7 @@ export default function Nav() {
     <header className="navbar">
       <div className="container navInner">
         <Link className="navBrand" href="/">
-          <span className="navBrandText">Materials Modeling Laboratory</span>
+          <span className="navBrandText">Materials AI Modeling Laboratory</span>
         </Link>
         <nav className="navLinks">
           {navigation.links.map((l) => (

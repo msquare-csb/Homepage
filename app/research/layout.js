@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "M-Square Lab",
-  description: "Lab website (draft)"
+  title: "Research | Materials AI Modeling Laboratory",
+  description: "Research at the Materials AI Modeling Laboratory, Sungkyunkwan University."
 };
 
 export default function ResearchLayout({ children }) {

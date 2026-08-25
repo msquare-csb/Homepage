@@ -143,10 +143,10 @@ export default function ResearchShowcase({ sessions }) {
       <section className="section researchFlowIntroSection">
         <div className="researchFlowIntro">
           <div className="researchFlowHeroCopy">
-            <p className="researchFlowEyebrow">M-Square Lab</p>
+            <p className="researchFlowEyebrow">Materials AI Modeling Laboratory</p>
             <h1 className="researchFlowHeroTitle">Research</h1>
             <p className="researchFlowHeroLead">
-              M-Square Lab develops AI-assisted synthesis planning, multiscale modeling, and nucleation control workflows
+              Materials AI Modeling Laboratory develops AI-assisted synthesis planning, multiscale modeling, and nucleation control workflows
               for semiconductors, ferroics, topological materials, and battery systems.
             </p>
           </div>

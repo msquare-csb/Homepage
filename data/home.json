@@ -2,12 +2,12 @@
   "welcome": {
     "enabled": false,
     "title": "Welcome",
-    "text": "Welcome to M-Square Laboratory. We study advanced materials, devices, and energy systems through AI-guided discovery, multiscale simulation, and nucleation-aware process modeling."
+    "text": "Welcome to the Materials AI Modeling Laboratory. We study advanced materials, devices, and energy systems through AI-guided discovery, multiscale simulation, and nucleation-aware process modeling."
   },
   "hero": {
-    "backgroundImage": "/images/Home/msq-hero-generated.png",
-    "eyebrow": "Sungkyunkwan University Materials Modeling Laboratory",
-    "title": "M-Square Laboratory",
+    "backgroundImage": "/images/Home/materials-ai-modeling-laboratory-hero.png",
+    "eyebrow": "Sungkyunkwan University Materials AI Modeling Laboratory",
+    "title": "Materials AI Modeling Laboratory",
     "signals": [
       "AI-Guided Discovery",
       "Multiscale Modeling",
@@ -68,7 +68,7 @@
   "intro": {
     "eyebrow": "What we do",
     "title": "Computational materials science from atomic-scale mechanisms to process and device-level design.",
-    "body": "M-Square Lab combines first-principles calculations, molecular dynamics, multiscale simulation, and data-driven analysis to understand materials behavior and guide design across semiconductors, energy systems, functional devices, and manufacturing processes."
+    "body": "Materials AI Modeling Laboratory combines first-principles calculations, molecular dynamics, multiscale simulation, and data-driven analysis to understand materials behavior and guide design across semiconductors, energy systems, functional devices, and manufacturing processes."
   },
   "researchSection": {
     "eyebrow": "Research",

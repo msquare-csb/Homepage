@@ -13,9 +13,9 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const topic = research.find((item) => item.slug === slug);
   if (!topic) {
-    return { title: "Research | M-Square Lab" };
+    return { title: "Research | Materials AI Modeling Laboratory" };
   }
-  return { title: `${topic.title} | M-Square Lab` };
+  return { title: `${topic.title} | Materials AI Modeling Laboratory` };
 }
 
 function renderLabelledText(item) {

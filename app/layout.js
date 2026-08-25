@@ -4,8 +4,8 @@ import Footer from "../components/Footer";
 import { withBasePath } from "../lib/basePath";
 
 export const metadata = {
-  title: "M-Square Lab",
-  description: "Lab website (draft)"
+  title: "Materials AI Modeling Laboratory",
+  description: "Materials AI Modeling Laboratory at Sungkyunkwan University."
 };
 
 export default function RootLayout({ children }) {

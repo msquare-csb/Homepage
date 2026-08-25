@@ -1,4 +1,4 @@
-# M-Square Lab Website (Local Draft)
+# Materials AI Modeling Laboratory Website (Local Draft)
 
 A clean, data-driven lab website starter built with Next.js (App Router) and configured for static export.
 
