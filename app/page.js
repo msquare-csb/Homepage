@@ -331,7 +331,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="homeFocusAvatars">
-                {group.people.slice(0, 6).map((person) => (
+                {group.people.map((person) => (
                   <div className="homeFocusAvatar" key={`${group.key}-${person.name}`}>
                     <img src={withBasePath(person.photo)} alt={person.name} loading="lazy" decoding="async" />
                   </div>

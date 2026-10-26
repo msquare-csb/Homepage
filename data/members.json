@@ -93,19 +93,7 @@
         "summaryTags":  [
                             "DFT/MD",
                             "FEM"
-                        ],
-        "outcomesLabel":  "Outcome",
-        "outcomes":  [
-                         {
-                             "title":  "Understanding the electrokinetic role of ions on electricity generation in droplet-based hydrovoltaic systems",
-                             "url":  "https://pubs.acs.org/doi/10.1021/acs.jpcc.3c03183",
-                             "detail":  "M. S. Kang\u2020, H. Ko, S. Lee*, S. B. Cho*, The Journal of Physical Chemistry C, 2023",
-                             "highlights":  [
-                                                "M. S. Kang",
-                                                "The Journal of Physical Chemistry C"
-                                            ]
-                         }
-                     ]
+                        ]
     },
     {
         "name":  "Dong Won Jeon",
@@ -149,8 +137,7 @@
         "photo":  "/images/members/jihoon_hong.jpg",
         "education":  [
                           "2026.09 - Present: Ph.D. student, School of Advanced Materials Science and Engineering, Sungkyunkwan University",
-                          "2024.09 - 2026.08: M.S., Energy Systems Research, Ajou University",
-                          "2019.03 - 2024.08: B.S., Material Science and Engineering, Ajou University"
+                          "2024.09 - 2026.08: M.S., Energy Systems Research, Ajou University"
                       ],
         "research":  [
                          "Semiconductor materials",
@@ -183,8 +170,7 @@
         "email":  "hajujuha@skku.edu",
         "photo":  "/images/members/juhyun_ha.png",
         "education":  [
-                          "2025.09 - Present: Integrated Ph.D. Student, School of Advanced Materials Science and Engineering, Sungkyunkwan University",
-                          "2019.03 - 2025.08: B.S., Advanced Materials System Engineering, Pukyong National University"
+                          "2025.09 - Present: Integrated Ph.D. Student, School of Advanced Materials Science and Engineering, Sungkyunkwan University"
                       ],
         "research":  [
                          "Semiconductor process",
@@ -215,8 +201,7 @@
         "scholar_url":  "https://scholar.google.com/citations?user=PYnRaHYAAAAJ&hl=ko&oi=ao",
         "photo":  "/images/members/jeu_shin.jpg",
         "education":  [
-                          "2026.03 - Present: Integrated Ph.D. student, School of Advanced Materials Science and Engineering, Sungkyunkwan University",
-                          "2020.03 - 2024.08: B.S., Mechanical Engineering, Hanbat National University"
+                          "2026.03 - Present: Integrated Ph.D. student, School of Advanced Materials Science and Engineering, Sungkyunkwan University"
                       ],
         "research":  [
                          "Finite element analysis of battery materials and processes.",
@@ -233,19 +218,7 @@
                             "DFT",
                             "FEM/DEM"
                         ],
-        "methodology":  [],
-        "outcomesLabel":  "Outcome",
-        "outcomes":  [
-                         {
-                             "title":  "Multi-scale mechanical-electrochemical coupled modeling of stress generation and its impact on different battery cell geometries",
-                             "url":  "https://doi.org/10.1016/j.jpowsour.2024.234064",
-                             "detail":  "J. Shin\u2020, Y.K. Lee*, Journal of Power Sources, 2024",
-                             "highlights":  [
-                                                "J. Shin",
-                                                "Journal of Power Sources"
-                                            ]
-                         }
-                     ]
+        "methodology":  []
     },
     {
         "name":  "Jonghun Seo",
@@ -255,8 +228,7 @@
         "email":  "jhs99@skku.edu",
         "photo":  "/images/members/jonghun_seo.png",
         "education":  [
-                          "2026.03 - Present: Integrated Ph.D. Student, School of Advanced Materials Science and Engineering, Sungkyunkwan University",
-                          "2018.03 - 2024.02: B.S., Materials Science and Engineering, Kumoh National Institute of Technology"
+                          "2026.03 - Present: Integrated Ph.D. Student, School of Advanced Materials Science and Engineering, Sungkyunkwan University"
                       ],
         "research":  [
                          "Semiconductor process",
@@ -336,8 +308,7 @@
         "scholar_url":  "https://scholar.google.co.kr/citations?hl=ko&user=5dRUfYUAAAAJ",
         "photo":  "/images/members/jindong_hwang.png",
         "education":  [
-                          "2026.03 - Present: M.S. student, Artificial Intelligence, Ajou University",
-                          "2022.03 - 2026.02: B.S., Materials Science and Engineering, Ajou University"
+                          "2026.03 - Present: M.S. student, Artificial Intelligence, Ajou University"
                       ],
         "research":  [
                          "Battery material modeling with first-principles and molecular dynamics.",
@@ -391,8 +362,7 @@
         "email":  "kimsj1017@skku.edu",
         "photo":  "/images/members/seongjun_kim.jpg",
         "education":  [
-                          "2026.09 - Present: M.S. student, School of Advanced Materials Science and Engineering, Sungkyunkwan University",
-                          "2021.03 - 2026.08: B.S., Materials Science and Engineering, Ajou University"
+                          "2026.09 - Present: M.S. student, School of Advanced Materials Science and Engineering, Sungkyunkwan University"
                       ],
         "research":  [
                          "Topological materials",
@@ -469,6 +439,28 @@
         "photo":  "/images/members/chanhwi_yun.png",
         "education":  [
                           "2022.03 - Present: B.S. student, Materials Science and Engineering, Ajou University"
+                      ],
+        "application":  "TBD",
+        "applicationDetails":  [
+                                   "TBD"
+                               ],
+        "applicationLabel":  "Research Interests",
+        "summaryTags":  [
+                            "TBD"
+                        ],
+        "methodology":  [
+                            "TBD"
+                        ]
+    },
+    {
+        "name":  "Serin Kim",
+        "category":  "Undergrad",
+        "role":  "Undergraduate Research Intern",
+        "affiliation":  "Physics, Catholic University of Korea",
+        "email":  "delightful0000@naver.com",
+        "photo":  "/images/members/serin_kim.png",
+        "education":  [
+                          "2023.03 - Present: B.S., Physics, Catholic University of Korea"
                       ],
         "application":  "TBD",
         "applicationDetails":  [

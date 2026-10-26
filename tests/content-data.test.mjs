@@ -114,7 +114,7 @@ test("Advanced Materials Back Cover news includes the cover artwork and DOI", ()
   assert.match(item.text, /10\.1002\/adma\.74502/);
   assert.equal(
     item.sourceUrl,
-    "https://www.skku.edu/skku_bak/campus/skk_comm/press.do?article.offset=0&articleLimit=10&articleNo=139171&mode=view"
+    "https://www.skku.edu/skku/research/industry/researchStory_view.do?mode=view&articleNo=139377"
   );
   assert.equal(item.sourceLabel, "Press Release");
   assert.match(newsPage, /className="newsSourceLink"/);
@@ -222,7 +222,7 @@ test("home research groups follow the Members page process and in-process order"
   const memberSections = readJson("data/member-sections.json");
   const memberMap = new Map(members.map((member) => [member.name, member]));
   const expectedNames = {
-    AI: ["Han Uk Lee", "Dong Won Jeon", "Ji Hoon Hong", "Juhyeon Ha", "Jindong Hwang"],
+    AI: ["Han Uk Lee", "Dong Won Jeon", "Ji Hoon Hong", "Juhyeon Ha", "Jindong Hwang", "Chanhwi Yun"],
     "Multi-scale": ["Min Sung Kang", "Ji Hoon Hong", "Jeu Shin", "Jonghun Seo"],
     Nucleation: [
       "Han Uk Lee",
@@ -230,7 +230,9 @@ test("home research groups follow the Members page process and in-process order"
       "Jimin Kim",
       "Sungjun Kim",
       "Seojun Moon",
-      "Jaeseon Yoo"
+      "Jaeseon Yoo",
+      "Chaeeun Song",
+      "Serin Kim"
     ]
   };
 
@@ -969,7 +971,7 @@ test("undergraduate members include Chaeeun Song followed by Chanhwi Yun", () =>
     role: "Undergraduate Research Intern",
     affiliation: "Materials Science and Engineering, Ajou University",
     email: "codms1006@ajou.ac.kr",
-    photo: "/images/members/chaeeun_song.png",
+    photo: "/images/members/chaeeun_song.jpg",
     education: [
       "2024.03 - Present: B.S. student, Materials Science and Engineering, Ajou University"
     ],
@@ -996,7 +998,7 @@ test("undergraduate members include Chaeeun Song followed by Chanhwi Yun", () =>
     methodology: ["TBD"]
   });
   assert.ok(
-    existsSync(join(rootDir, "public/images/members/chaeeun_song.png")),
+    existsSync(join(rootDir, "public/images/members/chaeeun_song.jpg")),
     "Chaeeun Song photo should exist"
   );
   assert.ok(
