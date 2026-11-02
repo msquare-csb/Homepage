@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { withBasePath } from "../lib/basePath";
+import { formatActivityDate } from "../lib/dateDisplay.mjs";
 import activities from "../data/activities.json";
 import home from "../data/home.json";
 import memberSections from "../data/member-sections.json";
@@ -47,11 +48,6 @@ const homeResearchAreas = home.researchPreview.map((item) => {
   };
 }).filter(Boolean);
 
-function formatActivityDate(value) {
-  const [year, month, day] = value.split("-");
-  return `${year}.${month}.${day}`;
-}
-
 function formatNewsDate(value) {
   return value.replaceAll("-", ".");
 }
@@ -80,7 +76,7 @@ export default function HomePage() {
     [loadedSlideIndexes]
   );
   const latestActivities = useMemo(
-    () => [...activities].sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, home.updates.activities.limit),
+    () => [...activities].sort((a, b) => b.date.localeCompare(a.date)).slice(0, home.updates.activities.limit),
     []
   );
   const featuredResearch = homeResearchAreas;
@@ -377,7 +373,7 @@ export default function HomePage() {
                       <img src={withBasePath(image)} alt={item.title} loading="lazy" decoding="async" />
                     ) : null}
                     <span>
-                      <em>{formatActivityDate(item.date)}</em>
+                      <em>{item.displayDate || formatActivityDate(item.date)}</em>
                       <strong>{item.title}</strong>
                     </span>
                   </Link>

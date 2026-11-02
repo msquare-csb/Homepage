@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import activities from "../../data/activities.json";
 import Card from "../../components/Card";
 import { withBasePath } from "../../lib/basePath";
-import { formatMonthDayYear } from "../../lib/dateDisplay.mjs";
+import { formatActivityDate } from "../../lib/dateDisplay.mjs";
 
 const getImages = (item) =>
   Array.isArray(item.images) && item.images.length
@@ -15,7 +15,7 @@ const getImages = (item) =>
 
 export default function ActivitiesPage() {
   const sorted = useMemo(
-    () => [...activities].sort((a, b) => (a.date < b.date ? 1 : -1)),
+    () => [...activities].sort((a, b) => b.date.localeCompare(a.date)),
     []
   );
   const [indexByKey, setIndexByKey] = useState({});
@@ -70,7 +70,7 @@ export default function ActivitiesPage() {
                 title={
                   <>
                     <span className="activityDate">
-                      {e.displayDate || formatMonthDayYear(e.date)}
+                      {e.displayDate || formatActivityDate(e.date)}
                     </span>
                     {" - "}
                     {e.title}
@@ -151,7 +151,7 @@ export default function ActivitiesPage() {
             </button>
             <h3 className="activityModalTitle">
               <span className="activityDate">
-                {activeItem.displayDate || formatMonthDayYear(activeItem.date)}
+                {activeItem.displayDate || formatActivityDate(activeItem.date)}
               </span>
               {" - "}
               {activeItem.title}

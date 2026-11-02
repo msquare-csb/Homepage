@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-10-28",
+    "displayDate": "Oct. 28–30, 2026",
+    "title": "AP-ALD 2026 Conference",
+    "description": "We presented our research at the 2nd International Asia-Pacific Atomic Layer Deposition Conference (AP-ALD 2026), held in Jeju, Korea, and discussed our work with fellow researchers.",
+    "image": "/images/Activities/2026.10.28-30.png"
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Outstanding Paper Award at the Chugang Academic Forum",
+    "description": "Congratulations to Dong Won Jeon on receiving an Outstanding Paper Award at the 3rd Chugang Academic Forum hosted by the College of Engineering at Sungkyunkwan University! He presented “LLM-Driven Synthesis Planning for Inorganic Materials Discovery.” We’re proud to celebrate his achievement!",
+    "images": [
+      "/images/Activities/2026.10.30_1.png",
+      "/images/Activities/2026.10.30_2.png"
+    ]
+  },
+  {
     "date": "2026-06-23",
     "title": "End of Semester Party",
     "description": "To mark the end of the semester, our lab members gathered for a celebratory lunch. Great work, everyone, and well done on giving your best throughout the semester. We hope everyone stays healthy and makes meaningful progress in their research during the upcoming break!",
@@ -46,7 +62,7 @@
   },
   {
     "date": "2025-11-14",
-    "displayDate": "11/03-14/2025",
+    "displayDate": "Nov. 3–14, 2025",
     "title": "Prof. Rohan Mishra Visit",
     "description": "Academic visit and collaboration period with Prof. Rohan Mishra.",
     "images": [

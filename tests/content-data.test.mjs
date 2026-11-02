@@ -129,7 +129,7 @@ test("Advanced Materials Back Cover news includes the cover artwork and DOI", ()
   );
 });
 
-test("Activities and News display dates in month/day/year order", async () => {
+test("Activities use abbreviated month dates and News uses numeric dates", async () => {
   const formatterPath = join(rootDir, "lib/dateDisplay.mjs");
   const activitiesPage = readFileSync(join(rootDir, "app/activities/page.js"), "utf8");
   const newsPage = readFileSync(join(rootDir, "app/news/page.js"), "utf8");
@@ -137,15 +137,17 @@ test("Activities and News display dates in month/day/year order", async () => {
   const rohanVisit = activities.find((entry) => entry.title === "Prof. Rohan Mishra Visit");
 
   assert.ok(existsSync(formatterPath), "shared date formatter should exist");
-  const { formatMonthDayYear } = await import(pathToFileURL(formatterPath).href);
+  const { formatMonthDayYear, formatActivityDate } = await import(pathToFileURL(formatterPath).href);
 
   assert.equal(formatMonthDayYear("2026-03-18"), "03/18/2026");
   assert.equal(formatMonthDayYear("2026-07-01"), "07/01/2026");
-  assert.match(activitiesPage, /displayDate \|\| formatMonthDayYear\(e\.date\)/);
+  assert.equal(formatActivityDate("2025-11-08"), "Nov. 8, 2025");
+  assert.equal(formatActivityDate("2026-05-01"), "May 1, 2026");
+  assert.match(activitiesPage, /displayDate \|\| formatActivityDate\(e\.date\)/);
   assert.match(newsPage, /formatMonthDayYear\(item\.date\)/);
   assert.deepEqual(rohanVisit, {
     date: "2025-11-14",
-    displayDate: "11/03-14/2025",
+    displayDate: "Nov. 3–14, 2025",
     title: "Prof. Rohan Mishra Visit",
     description: "Academic visit and collaboration period with Prof. Rohan Mishra.",
     images: [
@@ -348,7 +350,7 @@ test("home Latest Activities shows the date above the title", () => {
 
   assert.match(
     page,
-    /<span>\s*<em>\{formatActivityDate\(item\.date\)\}<\/em>\s*<strong>\{item\.title\}<\/strong>\s*<\/span>/
+    /<span>\s*<em>\{item\.displayDate \|\| formatActivityDate\(item\.date\)\}<\/em>\s*<strong>\{item\.title\}<\/strong>\s*<\/span>/
   );
 });
 
