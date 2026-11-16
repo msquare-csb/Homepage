@@ -1085,7 +1085,7 @@ test("Closed-Loop Solid-State Synthesis paper keeps verified author roles", () =
   assert.ok(paper, "Closed-Loop Solid-State Synthesis paper should exist");
   assert.equal(
     paper.title,
-    "Closed-Loop Solid-State Synthesis Planning for Materials Discovery With Large Language Models"
+    "Closed-Loop Solid-State Synthesis Planning for Materials Discovery with Large Language Models"
   );
   assert.equal(paper.date, "2026-08-10");
   assert.equal(paper.venue, "Advanced Materials, e74502");
