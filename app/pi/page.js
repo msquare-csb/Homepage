@@ -23,6 +23,19 @@ function splitTimeline(entry) {
   };
 }
 
+function TimelineDate({ date, className }) {
+  const parts = date.split(" - ");
+  return (
+    <span className={className}>
+      {parts.length === 2 ? (
+        <span className="piDateRange">
+          <span>{parts[0]}</span><span>-</span><span>{parts[1]}</span>
+        </span>
+      ) : date}
+    </span>
+  );
+}
+
 export default function PIPage() {
   const educationEntries = pi.education.filter(isEducationEntry);
   const professionalEntries = pi.education.filter((entry) => !isEducationEntry(entry));
@@ -106,7 +119,7 @@ export default function PIPage() {
                       const { date, text } = splitTimeline(entry);
                       return (
                         <li className="piTimelineItem" key={entry}>
-                          <span className="piTimelineDate">{date}</span>
+                          <TimelineDate date={date} className="piTimelineDate" />
                           <span className="piTimelineText">{text || entry}</span>
                         </li>
                       );
@@ -120,7 +133,7 @@ export default function PIPage() {
                       const { date, text } = splitTimeline(entry);
                       return (
                         <li className="piTimelineItem" key={entry}>
-                          <span className="piTimelineDate">{date}</span>
+                          <TimelineDate date={date} className="piTimelineDate" />
                           <span className="piTimelineText">{text || entry}</span>
                         </li>
                       );

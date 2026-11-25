@@ -757,6 +757,7 @@ h2{font-size:28px;margin:10px 0 12px;}
   column-gap:6px;
   align-items:baseline;
 }
+.piDateRange{display:grid;grid-template-columns:75px 18px auto;align-items:baseline;}
 .piDateSingle{white-space:nowrap;}
 .piDateStart{white-space:nowrap;}
 .piDateSep{color:#94a3b8;justify-self:center;}
