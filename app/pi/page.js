@@ -127,6 +127,20 @@ export default function PIPage() {
                     })}
                   </ul>
                 </div>
+                <div className="piSection">
+                  <div className="piSectionTitle">Professional Service</div>
+                  <ul className="piTimeline">
+                    {pi.professionalService.map((entry) => {
+                      const { date, text } = splitTimeline(entry);
+                      return (
+                        <li className="piTimelineItem" key={entry}>
+                          <span className="piTimelineDate">{date}</span>
+                          <span className="piTimelineText">{text || entry}</span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
               </div>
             </Card>
           </div>
