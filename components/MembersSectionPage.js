@@ -195,6 +195,12 @@ export default function MembersSectionPage({ view = "current" }) {
       <section className="section">
         <div className="sectionHeader">
           <h1>{pageTitle}</h1>
+          {!isAlumniView && (
+            <p className="membersOffice">
+              <span className="membersOfficeLabel">Office</span>
+              <span>{memberSections.currentOffice}</span>
+            </p>
+          )}
           <div className="publicationFilter">
             <Link
               href="/members/current"
